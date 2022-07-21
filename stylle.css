@@ -29,8 +29,8 @@ main {
 }
 
 img.img-elton {
-  width: 8.6rem;
-  height: 8.9rem;
+  width: 7.6rem;
+  height: 7.9rem;
   padding: .3rem;
   border-radius: 50%;
   border: 3px solid #42C920;
@@ -39,7 +39,7 @@ img.img-elton {
 
 main h2 {
   font-family: 'Special Elite', cursive;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: #42C920;
   
   border-right: 4px solid white;
@@ -58,9 +58,10 @@ section.links {
 
 section.links a {
   text-decoration: none;
-  background-color: #42c920ad;
   color: white;
-  padding: 1rem 6rem;
+  font-size: .8rem;
+  background-color: #42c920ad;
+  padding: .8rem 4rem;
   border-radius: 10px;
   transition: all 200ms;
   animation: left-right 800ms;
@@ -74,12 +75,12 @@ section.links a:hover {
 /*Estilização do footer*/
 
 footer p {
-  font-size: .6rem;
+  font-size: .5rem;
   color: white;
 }
 
 footer span {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 /*Animações*/
