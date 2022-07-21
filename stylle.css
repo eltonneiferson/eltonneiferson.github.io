@@ -9,7 +9,7 @@ body{
   background-color: rgba(0, 0, 0, 0.904);
   
   height: 100vh;
-  min-width: 400px;
+  min-width: 300px;
 
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -43,7 +43,7 @@ main h2 {
   color: #42C920;
   
   border-right: 4px solid white;
-  animation: blink-cursor 500ms steps(40) infinite normal, write-text steps(40) 5s normal;
+  animation: blink-cursor 500ms steps(40) infinite normal, write-text steps(40) 4s normal;
   white-space: nowrap;
   overflow: hidden;
 }
