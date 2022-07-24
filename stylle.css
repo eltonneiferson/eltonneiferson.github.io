@@ -6,8 +6,8 @@
 }
 
 body{
-  background-color: rgba(0, 0, 0, 0.904);
-  
+  background: linear-gradient(45deg, rgba(6,18,3,1) 0%, rgba(12,35,5,1) 59%, rgba(16,49,7,1) 82%, rgba(24,72,11,1) 100%);
+
   height: 100vh;
   min-width: 300px;
 
@@ -29,12 +29,12 @@ main {
 }
 
 img.img-elton {
-  width: 7.6rem;
-  height: 7.9rem;
+  width: 7.4rem;
+  height: 8rem;
   padding: .3rem;
   border-radius: 50%;
   border: 3px solid #42C920;
-  animation: topdown 800ms;
+  animation: img-animation 2s;
 }
 
 main h2 {
@@ -104,19 +104,6 @@ footer span {
   }
 }
 
-@keyframes topdown {
-  
-  0% {
-    opacity: 0;
-    transform: translateY(-10rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes left-right {
 
   0% {
@@ -128,5 +115,15 @@ footer span {
     opacity: 1;
     transform: translateX(0);
   }
+}
 
+@keyframes img-animation {
+
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
