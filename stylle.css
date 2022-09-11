@@ -6,6 +6,7 @@
 }
 
 body{
+  height: 75vh;
   background-image: url(img/background-body.jpg);
   background-size: cover;
   min-width: 400px;
