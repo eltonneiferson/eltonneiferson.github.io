@@ -87,7 +87,7 @@ button::after {
   background-image: url(img/pin.ico);
   background-size: cover;
   position: absolute;
-  right: 1rem;
+  right: .5rem;
   top: -1rem;
 }
 
