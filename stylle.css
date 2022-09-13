@@ -77,20 +77,8 @@ button img {
   top: -.15rem;  
 }
 
-button::after {
-  content: "";
-  width: 2.5rem;
-  height: 2.5rem;
-  background-image: url(img/pin.ico);
-  background-size: cover;
-  position: absolute;
-  right: .5rem;
-  top: -1rem;
-}
-
 button:hover {
   transform: scale(1.2);
-  box-shadow: 0px 0px 5px 0px black;
 }
 
 /*Estilização do footer*/
