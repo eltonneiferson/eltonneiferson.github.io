@@ -7,7 +7,7 @@
 
 body{
   height: 75vh;
-  background-image: url(https://github.com/eltonneiferson/eltonneiferson.github.io/blob/main/img/background-body.jpg?raw=true);
+  background-image: url(img/background-body.jpg);
   background-size: cover;
   min-width: 400px;
   font-family: 'Open Sans', sans-serif;
@@ -17,7 +17,7 @@ body{
 body::before {
   content: "";
   display: block;
-  background-image: url(https://github.com/eltonneiferson/eltonneiferson.github.io/blob/main/img/bkg.jpg?raw=true);
+  background-image: url(img/bkg.jpg);
   background-size: cover;
   background-position: center;
   height: 25vh;
@@ -74,7 +74,7 @@ section.links button {
 button img {
   position: absolute;
   left: -.8rem;
-  top: -.15rem;  
+  top: -.25rem;  
 }
 
 button:hover {
