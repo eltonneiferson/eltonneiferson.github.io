@@ -8,6 +8,7 @@
   --font-default: 'Courier Prime', monospace;
   --color-default: white;
   --color-border: #F7DD43;
+  --color-border-secondary: #42C920;
   --bg-button: #202024;
 }
 
@@ -71,7 +72,7 @@ main {
   width: 9rem;
   padding: 1.5rem 0;
   background:var(--bg-button);
-  border-bottom: 2px solid var(--color-border);
+  border-bottom: 2px solid var(--color-border-secondary);
   border-radius: 6px;
   transition: 150ms;
 }
