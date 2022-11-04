@@ -7,8 +7,8 @@
 :root {
   --font-default: 'Courier Prime', monospace;
   --color-default: white;
-  --color-border: #F7DD43;
-  --color-border-secondary: #42C920;
+  --color-border: #f1da57;
+  --color-matrix: #42C920;
   --bg-button: #202024;
 }
 
@@ -52,7 +52,7 @@ main {
 .text h1 {
   color: var(--color-border);
   font-family: 'Special Elite', cursive;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   border-right: 4px solid white;
   animation: blink-cursor 500ms steps(40) infinite normal, write-text steps(40) 4s normal;
   white-space: nowrap;
@@ -69,10 +69,10 @@ main {
 }
 
 .links a {
-  width: 9rem;
+  width: 8.5rem;
   padding: 1.5rem 0;
   background:var(--bg-button);
-  border-bottom: 2px solid var(--color-border-secondary);
+  border-bottom: 2px solid var(--color-matrix);
   border-radius: 6px;
   transition: 150ms;
 }
