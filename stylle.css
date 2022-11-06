@@ -7,7 +7,6 @@
 :root {
   --font-default: 'Courier Prime', monospace;
   --color-default: white;
-  --color-border: #f1da57;
   --color-matrix: #42C920;
   --bg-button: #202024;
 }
@@ -16,7 +15,10 @@ body * {
   font-family: var(--font-default);
   text-decoration: none;
   color: var(--color-default);
-  text-align: center;
+}
+
+.hide {
+  display: none;
 }
 
 body{
@@ -33,57 +35,89 @@ body::before {
   background-size: cover;
   background-position: center;
   height: 25vh;
-  border-bottom: 4px solid var(--color-border);
+  border-bottom: 4px solid var(--color-matrix);
 }
 
 main {
   display: grid;
-  gap: 1.2rem;
+  gap: .9rem;
   place-items: center;
+  text-align: center;
 }
 
 .img-elton img {
   margin-top: -4rem;
   width: 7rem;
   border-radius: 50%;
-  border: 4px solid var(--color-border);
+  border: 5px solid var(--color-matrix);
 }
 
 .text h1 {
-  color: var(--color-border);
+  color: var(--color-default);
   font-family: 'Special Elite', cursive;
   font-size: 1.5rem;
   border-right: 4px solid white;
-  animation: blink-cursor 500ms steps(40) infinite normal, write-text steps(40) 4s normal;
+  width: 0;
+  animation: blink-cursor 500ms steps(40) infinite normal, write-text steps(40) 4s 1s normal forwards;
   white-space: nowrap;
   overflow: hidden;
   margin-bottom: .5rem;
 }
 
-.links {
-  max-width: 19.2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.2rem;
+.function-dev {
+  cursor: pointer;
+  color: var(--color-matrix);
+  margin-bottom: .5rem;
 }
 
-.links a {
-  width: 8.5rem;
-  padding: 1.5rem 0;
+.icons-dev {
+  width: 10rem;
+  z-index: 100;
+}
+
+.networks {
   background:var(--bg-button);
-  border-bottom: 2px solid var(--color-matrix);
-  border-radius: 6px;
-  transition: 150ms;
+  border-bottom: .2rem solid var(--color-matrix);
+  border-radius: .5rem;
+  padding: 1.3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
 }
 
-.links a:hover {
-  transform: scale(1.1);
+.network-icon {
+  width: 3.5rem;
+  transition: .1s;
+}
+
+.networks a {
+  transform: scale(0);
+  animation: appear 1s forwards;
+}
+
+.networks a:nth-child(1) {
+  animation-delay: 0;
+}
+
+.networks a:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.networks a:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.networks a:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.network-icon:hover {
+  transform: scale(1.2);
 }
 
 @keyframes blink-cursor {
     from {
-      border-color: #F7DD43;
+      border-color: var(--font-default);
     }
     to {
       border-color: transparent;
@@ -97,5 +131,15 @@ main {
   }
   to {
     width: 100%;
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  
+  100% {
+    transform: scale(1);
   }
 }
