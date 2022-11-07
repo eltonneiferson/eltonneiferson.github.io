@@ -9,6 +9,7 @@
   --color-default: white;
   --color-matrix: #42C920;
   --bg-button: #202024;
+  --bg-gradient: linear-gradient(45deg, #ff0000, #ffff00, #42C920, #001aff);
 }
 
 body * {
@@ -45,11 +46,12 @@ main {
   text-align: center;
 }
 
-.img-elton img {
-  margin-top: -4rem;
-  width: 7rem;
+img.img-elton {
+  width: 8rem;
+  margin-top: -4.5rem;
+  padding: .3rem;
+  background: linear-gradient(45deg, #42C920, #ffff00, #42C920, #ffff00);
   border-radius: 50%;
-  border: 5px solid var(--color-matrix);
 }
 
 .text h1 {
@@ -75,14 +77,20 @@ main {
   z-index: 100;
 }
 
+.border {
+  padding: .3em;
+  background: var(--bg-gradient);
+  border-radius: .5rem;
+}
+
 .networks {
   background:var(--bg-button);
-  border-bottom: .2rem solid var(--color-matrix);
   border-radius: .5rem;
   padding: 1.3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
+  position: relative;
 }
 
 .network-icon {
