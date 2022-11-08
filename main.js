@@ -1,15 +1,19 @@
-const functionDev = document.querySelector('.function-dev')
-const iconsDev = document.querySelector('.icons-dev')
 const networks = document.querySelector('.networks')
+const  typingName =  document.querySelector('.text')
 
+const userName = 'Elton Neiferson'
 const linkedin = 'https://www.linkedin.com/in/elton-neiferson-134431213/'
 const gitHub = 'https://github.com/eltonneiferson/'
 const instagram = 'https://www.instagram.com/eltonneiferson/'
 const email = 'eltonneiferson@outlook.com'
+const skills = 'html,css,js,git'
 
-functionDev.addEventListener('click', function() {
-    iconsDev.classList.toggle('hide')
-})
+typingName.innerHTML = `
+    <h1>${userName}</h1>
+    <p class="function-dev">fullStackDeveloper<span>(){</span></p>
+    <img class="icons-dev" src="https://skillicons.dev/icons?i=${skills}"/>
+    <p style="text-align: left;">}</p>
+`
 
 networks.innerHTML = `
     <a href="${linkedin}" target="_blank">

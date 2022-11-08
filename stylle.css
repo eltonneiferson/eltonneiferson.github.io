@@ -41,7 +41,7 @@ body::before {
 
 main {
   display: grid;
-  gap: .9rem;
+  gap: 1.2rem;
   place-items: center;
   text-align: center;
 }
@@ -67,7 +67,6 @@ img.img-elton {
 }
 
 .function-dev {
-  cursor: pointer;
   color: var(--color-matrix);
   margin-bottom: .5rem;
 }
@@ -90,7 +89,6 @@ img.img-elton {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
-  position: relative;
 }
 
 .network-icon {
