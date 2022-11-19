@@ -23,7 +23,7 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .dark-mode {
@@ -37,7 +37,7 @@ main {
 }
 
 img.img-elton {
-  width: 7rem;
+  width: 6rem;
   padding: .2rem;
   border: .25rem solid var(--color-matrix);
   border-radius: 50%;
@@ -52,7 +52,7 @@ img.img-elton {
 
 .about-me h1 {
   font-family: 'Special Elite', cursive;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   border-right: 4px solid white;
   width: 0;
   animation: blink-cursor 500ms steps(40) infinite normal, write-text steps(40) 4s 1s normal forwards;
@@ -62,7 +62,7 @@ img.img-elton {
 
 h2 {
   color: var(--color-matrix);
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
 span {
@@ -75,7 +75,7 @@ span {
 }
 
 .icons-dev {
-  width: 10rem;
+  width: 9rem;
 }
 
 .networks {
@@ -84,7 +84,7 @@ span {
 }
 
 a.link {
-  padding: .8rem 1.5rem;
+  padding: .9rem 1.6rem;
   border-radius: .5rem;
   font-size: 1rem;
   font-weight: bold;
@@ -92,7 +92,7 @@ a.link {
   
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: .4rem;
 }
 
 a.link:hover {
@@ -110,17 +110,17 @@ a.link:hover {
 }
 
 .network-icon {
-  width: 2rem;
+  width: 1.5rem;
 }
 
 .control {
   background-color: white;
-  width: 100px;
-  padding: .5rem;
+  width: max-content;
+  padding: .3rem;
   border-radius: 4rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: .4rem;
   position: relative;
 }
 
@@ -132,8 +132,8 @@ a.link:hover {
   cursor: pointer;
   background-color: black;
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   position: absolute;
 }
@@ -148,8 +148,10 @@ a.link:hover {
 
 footer {
   text-align: center;
+  font-size: .8rem;
   display: grid;
   place-content: center;
+  place-items: center;
   gap: 1rem;
 }
 
