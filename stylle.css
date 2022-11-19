@@ -18,17 +18,17 @@ body * {
 
 main {
   height: 100vh;
+  padding-top: 2rem;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
   gap: 1.5rem;
-  text-align: center;
 }
 
 .dark-mode {
-  color: var(--color-default);
   background: url(img/bg.svg);
+  color: var(--color-default);
   background-size: cover;
 }
 
@@ -37,17 +37,17 @@ main {
 }
 
 img.img-elton {
-  width: 8rem;
-  padding: .3rem;
-  border: .2rem solid var(--color-matrix);
+  width: 7rem;
+  padding: .2rem;
+  border: .25rem solid var(--color-matrix);
   border-radius: 50%;
 }
 
 .about-me {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  gap: .6rem;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: .5rem;
 }
 
 .about-me h1 {
@@ -80,11 +80,11 @@ span {
 
 .networks {
   display: grid;
-  gap: .7rem;
+  gap: 1rem;
 }
 
 a.link {
-  padding: .8rem 1.4rem;
+  padding: .8rem 1.5rem;
   border-radius: .5rem;
   font-size: 1rem;
   font-weight: bold;
@@ -92,7 +92,7 @@ a.link {
   
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: .5rem;
 }
 
 a.link:hover {
@@ -114,20 +114,23 @@ a.link:hover {
 }
 
 .control {
+  background-color: white;
   width: 100px;
-  height: 50px;
   padding: .5rem;
-  border-radius: 60px;
-  background-color: black;
+  border-radius: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1.5rem;
   position: relative;
+}
+
+.controlWhiteMode {
+  background-color: black;
 }
 
 .on-off {
   cursor: pointer;
+  background-color: black;
   border: none;
   width: 40px;
   height: 40px;
@@ -135,8 +138,19 @@ a.link:hover {
   position: absolute;
 }
 
+.onOffWhiteMode {
+  background-color: white;
+}
+
 .moveButton {
   right: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
 }
 
 @keyframes blink-cursor {
